@@ -43,7 +43,7 @@ SECRET_KEY = 'fs5-ye6$o%y+iwd(c2p(0d^@r$wa!dgx^y#9o&*&8%#x89g&k&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://guarded-journey-15618.herokuapp.com/']
 
 
 # Application definition
@@ -83,10 +83,6 @@ DATABASES = {
     }
 }
 
-import dj_database_url
-
-DATABASES[‘default’] = dj_database_url.config()
-
 
 # Password validation
 # https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators
@@ -125,9 +121,3 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, ‘static’),
-)
-
-
-SECURE_PROXY_SSL_HEADER = (‘HTTP_X_FORWARDED_PROTO’, ‘https’)
