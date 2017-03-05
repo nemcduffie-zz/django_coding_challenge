@@ -16,7 +16,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['guarded-journey-15618.herokuapp.com']
 
 TEMPLATES = [
     {
